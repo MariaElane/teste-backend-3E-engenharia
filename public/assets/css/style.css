@@ -1,0 +1,113 @@
+/*-----------------------------------ESTILOS GERAIS-----------------------------------------------------------*/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+header, main, footer {
+    padding-left: 300px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+
+ 
+  .s-icon{
+
+    width: 25px;
+    height: 25px;
+}
+
+.btn-block{
+  width: 100%;
+  display: block;
+}
+
+.alert{
+  border-color: #d0e9c6;
+  color: #f8f9fa;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.alert-success{
+  background-color: #38c172;
+}
+
+.alert-danger{
+  background-color: #e3342f;
+}
+
+.alert-warning{
+  background-color: #ffed4a;
+}
+
+
+.btn-success {
+  color: #fff;
+  background-color: #38c172;
+  border-color: #38c172;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #e3342f;
+  border-color: #e3342f;
+}
+
+.btn-warning {
+  color: #212529;
+  background-color: #ffed4a;
+  border-color: #ffed4a;
+}
+
+.btn-info {
+  color: #212529;
+  background-color: #6cb2eb;
+  border-color: #6cb2eb;
+}
+
+
+  /*-----------------------------------END ESTILOS GERAIS-----------------------------------------------------------*/
+
+
+ /*-----------------------------------SIDE-NAV-----------------------------------------------------------*/
+ .logo-side-nav{
+
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  display: block !important;
+  margin: 0 auto;
+}
+ 
+ .side-nav li a span{
+  margin-left: 10px;
+  text-transform: none;
+  color:  rgba(0,0,0,0.80);
+}
+
+
+
+.estilo-side-nav li{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px;
+}
+
+.estilo-side-nav li i{
+  vertical-align: middle !important;
+}
+ /*-----------------------------------END MENU-----------------------------------------------------------*/
