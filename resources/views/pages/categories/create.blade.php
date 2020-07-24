@@ -3,7 +3,7 @@
 @section('content')
     <h4 class="center">Cadastrar Nova Categoria</h4>
         <div class="card">
-            <form action="{{ route('categories.store')}}" method="POST">
+            <form action="{{ route('categories.store')}}" method="POST" class="card-content">
                     @csrf
                     @include('pages.categories._partials.form')
                     <div>

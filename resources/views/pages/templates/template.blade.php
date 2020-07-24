@@ -46,26 +46,26 @@
 
             <li>
                 <a href="{{route('categories.index')}}">
-                    <i class="s-icon material-icons">insert_chart</i>
+                    <i class="s-icon material-icons">ballot</i>
                     <span>Categorias</span>
                 </a>
             </li>
 
             <li>
                 <a href="{{route('products.index')}}">
-                    <img src="{{url('assets/img/icons/products.svg')}}" class="s-icon" alt="Produtos">
+                    <i class="s-icon material-icons">fastfood</i>
                     <span>Produtos</span>
                 </a>
             </li>
         </ul>
 
 
-{{--content--}}
+        {{--content--}}
+        <div class="container">
+        @yield('content')
 
-@yield('content')
-
-{{--end content--}}
-   
+        {{--end content--}}
+        </div>
     </body>
 </main>
 
@@ -96,6 +96,8 @@
     $(function () {
         setTimeout("$('.alerta').fadeOut();",3000)
     });
+
+    
 
 </script>
 

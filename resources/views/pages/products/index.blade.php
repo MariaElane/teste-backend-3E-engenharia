@@ -26,7 +26,7 @@
         </div>
     </form>
     
-    <table class="striped  col l12 m12 s12">
+    <table class="striped centered  col l12 m12 s12">
         @include('pages.includes.alerts')
         <thead>
             <tr>

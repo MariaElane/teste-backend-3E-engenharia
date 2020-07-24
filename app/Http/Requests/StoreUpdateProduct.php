@@ -33,7 +33,7 @@ class StoreUpdateProduct extends FormRequest
                 new UniqueUser('products', $id),
             ], 
             'image' => 'required|image',
-            'price' => "required|regex:/^\d+(\.\d{1,2})?$/",
+            'price' => "required",
             'description' => 'nullable|min:3|max:255',
             
         ];

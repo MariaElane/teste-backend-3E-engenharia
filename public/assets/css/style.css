@@ -52,32 +52,14 @@ header, main, footer {
 }
 
 .alert-warning{
-  background-color: #ffed4a;
+  background-color: #fbc02d ;
 }
 
 
-.btn-success {
-  color: #fff;
-  background-color: #38c172;
-  border-color: #38c172;
-}
 
-.btn-danger {
-  color: #fff;
-  background-color: #e3342f;
-  border-color: #e3342f;
-}
 
-.btn-warning {
-  color: #212529;
-  background-color: #ffed4a;
-  border-color: #ffed4a;
-}
-
-.btn-info {
-  color: #212529;
-  background-color: #6cb2eb;
-  border-color: #6cb2eb;
+.container {
+  width: 95% !important;
 }
 
 

@@ -4,7 +4,7 @@
     <h4 class="center">Editar a Categoria {{$category->name}}</h4>
     
     <div class="card">
-        <form action="{{ route('categories.update', $category->id)}}" class="form" method="POST">
+        <form action="{{ route('categories.update', $category->id)}}" class="form card-content" method="POST">
                 @csrf
                 @method('PUT')
                     @include('pages.categories._partials.form')

@@ -14,7 +14,9 @@
         <input type="text" name="price" 
                            value="{{ $product->price ?? old('price') }}"
                            class="validate" 
-                           placeholder="Preço:">
+                           placeholder="Preço:"
+                           id="price"
+                           onkeyup="formatarMoeda();">
     </div>
 
     <div class="input-field col l12 m12 s12">
@@ -36,4 +38,27 @@
     </div>
     
 </div>
+
+@push('scripts')
+<script>
+
+    function formatarMoeda() {
+        
+        var elemento = document.getElementById('price');
+        var valor = elemento.value;
+        
+        valor = valor + '';
+        valor = parseInt(valor.replace(/[\D]+/g,''));
+        valor = valor + '';
+        valor = valor.replace(/([0-9]{2})$/g, ",$1");
+
+        if (valor.length > 6) {
+        valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");
+         }
+
+        elemento.value = valor;
+    }
+</script>
+@endpush
+
 

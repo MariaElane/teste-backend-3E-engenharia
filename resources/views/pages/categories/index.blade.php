@@ -26,7 +26,7 @@
         </div>
     </form>
     
-    <table class="striped highlight centered responsive-table">
+    <table class="striped highlight centered ">
         @include('pages.includes.alerts')
         <thead>
             <tr>

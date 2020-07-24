@@ -76,7 +76,7 @@ class CategoryProductController extends Controller
         if(!$request->categories || count($request->categories) == 0){
             return redirect()
                     ->back()
-                    ->with('info', 'Você precisa escolher pelo menos uma permissão');
+                    ->with('info', 'Você precisa escolher pelo menos uma categoria');
         }
 
         $product->categories()->attach($request->categories);
@@ -85,11 +85,7 @@ class CategoryProductController extends Controller
 
     }
 
-    public function filterCategorysAvailable(){
-
-    }
-
-
+  
     public function detachCategorysProduct($idProduct, $idCategory){
         
 
@@ -98,7 +94,7 @@ class CategoryProductController extends Controller
         if(!$product || !$category) {
             return redirect()
                     ->back()
-                    ->with('info', 'Permissão ou perfil não encontrado');
+                    ->with('info', 'Produto ou categoria não encontrado');
         }
 
         $product->categories()->detach ($category);
