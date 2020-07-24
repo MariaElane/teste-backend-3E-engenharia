@@ -24,7 +24,7 @@ $ composer install
 ```bash
 $ php artisan key:generate
 ```
-- Sirva as imagens do diretório *public* da aplicação com o comando:
+- Crie um link simbólico em public/storage que aponta para storage/app/public com o comando:
 ```bash
 $ php artisan storage:link
 ```
